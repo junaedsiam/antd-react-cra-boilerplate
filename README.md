@@ -23,9 +23,11 @@ yarn start
 
 Install Eslint & Prettier extensions. If format on save is not working, follow these steps:
 
+```
 CTRL + SHIFT + P
 Format Document (in pop-up bar)
 Select Format Document
 Select Configure Default Formatter...
 Select Prettier - Code formatter
 Done!
+```
