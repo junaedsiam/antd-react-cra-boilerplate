@@ -1,4 +1,4 @@
-# Guide
+# Ant Design (React) CRA boilerplate
 
 Clone the repo and then run following command -
 
@@ -6,17 +6,23 @@ Clone the repo and then run following command -
 yarn install
 ```
 
-For running development version run following command -
+For running development version,
 
 ```
-yarn dev
+yarn start
 ```
 
-For running production version, run following command -
+For building an optimized production version
 
 ```
 yarn build
-yarn start
+```
+
+For checking eslint issue,
+
+```
+yarn lint
+
 ```
 
 # Prettier Code formatting with vscode
