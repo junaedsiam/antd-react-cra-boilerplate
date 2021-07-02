@@ -5,23 +5,25 @@ import './App.less'
 import Home from 'component/page/home'
 import About from 'component/page/about'
 import Notfound from 'component/page/notFound'
-import Navbar from 'component/layout/nav'
+// import Navbar from 'component/layout/nav'
+import AppLayout from 'component/layout/appLayout'
 
 const App = () => (
     <Router>
         <div>
-            <Navbar />
-            <Switch>
-                <Route path="/" exact>
-                    <Home />
-                </Route>
-                <Route path="/about" exact>
-                    <About />
-                </Route>
-                <Route path="*">
-                    <Notfound />
-                </Route>
-            </Switch>
+            <AppLayout>
+                <Switch>
+                    <Route path="/" exact>
+                        <Home />
+                    </Route>
+                    <Route path="/about" exact>
+                        <About />
+                    </Route>
+                    <Route path="*">
+                        <Notfound />
+                    </Route>
+                </Switch>
+            </AppLayout>
         </div>
     </Router>
 )

@@ -1,7 +1,7 @@
 /* eslint-disable func-names */
 import React from 'react'
 import axios from 'axios'
-
+import { message } from 'antd'
 const defaultParam = {
     auth: false
 }
@@ -37,6 +37,7 @@ const useHttp = (param = defaultParam) =>
             },
             function (error) {
                 // TODO: handle response error here!
+                message.error('Something went wrong')
                 return Promise.reject(error)
             }
         )
